@@ -1,0 +1,16 @@
+{
+  "concept_id": "EXAMPLE_ONLY",
+  "pair": [
+    "en",
+    "fr"
+  ],
+  "relation": "UNRESOLVED",
+  "evidence_urls": [],
+  "evidence_record_hashes": [],
+  "evidence_origin": null,
+  "sense_alignment_note": null,
+  "historical_scope": null,
+  "family_id": null,
+  "reviewer": null,
+  "review_date": null
+}

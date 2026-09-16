@@ -1,0 +1,118 @@
+{
+  "schema_version": "protocol-amendment-v1",
+  "amendment_id": "lexical-freshstart-v4_1-20260915-pre-results",
+  "amendment_version": "4.1.0",
+  "implementation_revision_target": "4.1.0-r1",
+  "project_id": "lexical-freshstart-4lang-history-v4_1",
+  "status": "APPROVED_DESIGN_PENDING_IMPLEMENTATION",
+  "recorded_at_utc": "2026-09-15T09:41:40Z",
+  "hash_algorithm": "SHA-256",
+  "approval": {
+    "reviewer_id": "jm02",
+    "approval_scope": "DESIGN_REVISION_ONLY",
+    "identity_authentication_claimed": false,
+    "electronic_signature_claimed": false,
+    "data_qa_approval_claimed": false,
+    "implementation_approval_claimed": false
+  },
+  "timing": {
+    "model_results_observed_before_change": false,
+    "checkpoint_results_observed_before_change": false,
+    "readiness_results_observed_before_change": false,
+    "history_experiment_results_observed_before_change": false,
+    "classification": "PROSPECTIVE_PRE_MODEL_RESULTS_AMENDMENT",
+    "on_contradiction": "STOP_AND_RECLASSIFY_PROTOCOL_CHANGE"
+  },
+  "artifact_bindings": {
+    "base_spec": {
+      "path": "spec/RESEARCH_SPEC_V4_KO.md",
+      "sha256": "cbab5968ede0c897cce684927a6eaa4b9ebef87fccb5cda44f43d02ee636e105",
+      "bytes": 24144,
+      "role": "IMMUTABLE_DELIVERED_BASELINE"
+    },
+    "base_config": {
+      "path": "spec/pilot.json",
+      "sha256": "08a3eddd9b161d563b35d5842555ed7c309033099362aeb96a81bd94b163f76c",
+      "bytes": 2066,
+      "role": "IMMUTABLE_DELIVERED_BASELINE"
+    },
+    "revised_spec": {
+      "path": "implementation/protocol/RESEARCH_SPEC_V4_1_KO.md",
+      "sha256": "7d0d27602aa3616d7f23601c6989d0462321ce85642d9714e27aa96c918e83c4",
+      "bytes": 14121,
+      "role": "ACTIVE_V4_1_PROTOCOL"
+    },
+    "revised_config": {
+      "path": "implementation/config/pilot_v4_1.json",
+      "sha256": "22dcb12ba2a1976810fb55722a6cfcc8bac43c54f916e133bb8433c0720eb2e5",
+      "bytes": 5284,
+      "role": "ACTIVE_V4_1_CONFIG"
+    }
+  },
+  "integrity_model": {
+    "amendment_self_reference_present": false,
+    "base_delivery_files_modified": false,
+    "legacy_annotation_freeze_reinterpretation_allowed": false,
+    "legacy_experiment_freeze_reinterpretation_allowed": false,
+    "legacy_pass_status_inherited": false,
+    "new_v4_1_annotation_freeze_required": true,
+    "new_v4_1_experiment_freeze_required": true,
+    "upstream_source_compatibility": "UPSTREAM_EXACT_HASH_ONLY",
+    "upstream_compatibility_requirements": [
+      "EXACT_SHA256_MATCH",
+      "EXACT_BYTE_COUNT_MATCH",
+      "TRUSTED_SOURCE_ANCHOR_MATCH",
+      "V4_1_CANDIDATE_RECONSTRUCTION_MATCH"
+    ]
+  },
+  "scientific_changes": {
+    "title": "Learning History Shapes Lexical Language Choice in Multilingual Language Models",
+    "primary_focus": "CONCEPT_LEVEL_COUNTERBALANCED_LEARNING_HISTORY_AND_LEXICAL_LANGUAGE_CHOICE",
+    "ability_choice_separation_primary": true,
+    "history_treatment": "EN_FR_ADDITIONAL_EXPOSURE_ORDER_WITH_BRANCH_MATCHED_TOTALS_AND_COMMON_TAIL",
+    "core_etymology_removed": true,
+    "etymology_required_for_data_gate": false,
+    "etymology_required_for_freeze_gate": false,
+    "etymology_required_for_training_or_measurement": false,
+    "documented_lexical_relation_role": "OPTIONAL_EXPLORATORY_ONLY",
+    "documented_lexical_relation_current_status": "NOT_RUN_EXPLORATORY_LEXICAL_RELATION_BY_DESIGN",
+    "surface_and_token_similarity_required": true,
+    "surface_and_token_language_pairs": [
+      ["ko", "en"],
+      ["ko", "zh"],
+      ["ko", "fr"],
+      ["en", "zh"],
+      ["en", "fr"],
+      ["zh", "fr"]
+    ],
+    "prediction_current_status": "NOT_RUN_PREDICTION_BY_DESIGN",
+    "prediction_requires_new_preregistration": true,
+    "etymology_family_removed_from_core_split": true,
+    "replacement_split_unit": "leakage_component_id"
+  },
+  "current_primary_data_state": {
+    "etymology_deferrals_block_core": false,
+    "etymology_deferral_count_ignored_by_core": 8,
+    "term_quality_blocker_retained": true,
+    "term_quality_blocker": {
+      "selection_ordinal": 38,
+      "review_order": 195,
+      "candidate_id": "krdict-b100064abad6c836:60487:1",
+      "language": "en",
+      "registered_expression": "hen's egg",
+      "status": "BLOCKED_TERM_QUALITY",
+      "silent_replacement_allowed": false
+    }
+  },
+  "not_claimed": [
+    "REVIEWER_IDENTITY_AUTHENTICATED",
+    "HUMAN_REVIEW_COMPLETE",
+    "DATA_QA_PASS",
+    "IMPLEMENTATION_COMPLETE",
+    "ANNOTATION_FREEZE_COMPLETE",
+    "EXPERIMENT_FREEZE_COMPLETE",
+    "GPU_REPLAY_PASS",
+    "PILOT_COMPLETE",
+    "MAIN_AUTHORIZED"
+  ]
+}

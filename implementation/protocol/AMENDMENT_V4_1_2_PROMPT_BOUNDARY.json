@@ -1,0 +1,43 @@
+{
+  "schema_version": "prompt-boundary-amendment-v1",
+  "protocol_version": "4.1.2",
+  "status": "APPROVED_PRETRAINING_PROMPT_FORMAT_CORRECTION",
+  "approval": {
+    "reviewer_id": "jm02",
+    "user_message_exact": "응 실험에 문제가 없다면 그렇게하자.",
+    "identity_authentication_claimed": false
+  },
+  "parent_evaluation_plan": {
+    "path": "implementation/config/evaluation_plan.json",
+    "sha256": "e11f9922a9e4d531a9d033d84066765695f8701624d88e0a86683c5c0aa5b578",
+    "bytes": 7037
+  },
+  "parent_protocol_amendment": {
+    "path": "implementation/protocol/AMENDMENT_V4_1_1_EGG.json",
+    "sha256": "ca56f6aaed26619ee10ee49f852ae0e5e015fb5fc1348dc695fcf584768d5cfd",
+    "bytes": 7209
+  },
+  "revised_evaluation_plan": {
+    "path": "implementation/config/evaluation_plan_v4_1_2.json",
+    "sha256": "ec95b9167cf39b1a2de3b1d537eff584e2ca9caff439eafd4139aec894bd423e",
+    "bytes": 8038
+  },
+  "change": "REMOVE_ASCII_SPACES_AT_END_OF_TEMPLATE_ONLY",
+  "changed_template_count": 36,
+  "unchanged_template_count": 12,
+  "engine_schema_version_retained": "4.0.0-r1",
+  "tokenizer_weights_unchanged": true,
+  "answers_and_glosses_unchanged": true,
+  "training_and_evaluation_templates_changed_together": true,
+  "shared_across_all_roots_and_branches": true,
+  "model_results_observed": false,
+  "scientific_outcome_invariance_claimed": false,
+  "main_enabled": false,
+  "validation_required": [
+    "EXACT_STRUCTURAL_DIFF",
+    "ALL_7200_CONTEXT_BOUNDARIES",
+    "CONTEXT_LENGTH",
+    "UNCHANGED_EXPRESSION_FEATURES"
+  ],
+  "annotation_freeze_preserved": true
+}

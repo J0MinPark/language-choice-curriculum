@@ -1,0 +1,164 @@
+{
+  "schema_version": "protocol-amendment-v1",
+  "amendment_id": "lexical-freshstart-v4_1_1-ordinal-38-en-egg-20260915-pre-results",
+  "amendment_version": "4.1.1",
+  "implementation_revision_target": "4.1.1-r1",
+  "project_id": "lexical-freshstart-4lang-history-v4_1_1",
+  "parent_project_id": "lexical-freshstart-4lang-history-v4_1",
+  "amendment_kind": "ADDITIVE_SINGLE_REGISTERED_EXPRESSION_CORRECTION",
+  "status": "APPROVED_CORRECTION_PENDING_EVIDENCE_AND_IMPLEMENTATION",
+  "recorded_at_utc": "2026-09-15T10:43:25Z",
+  "hash_algorithm": "SHA-256",
+  "approval": {
+    "reviewer_id": "jm02",
+    "approval_scope": "EXACTLY_ONE_REGISTERED_EXPRESSION_CORRECTION",
+    "explicit_user_decision": true,
+    "identity_authentication_claimed": false,
+    "electronic_signature_claimed": false,
+    "formal_evidence_verified": false,
+    "implementation_approval_claimed": false
+  },
+  "timing": {
+    "model_results_observed_before_change": false,
+    "checkpoint_results_observed_before_change": false,
+    "readiness_results_observed_before_change": false,
+    "history_experiment_results_observed_before_change": false,
+    "classification": "PROSPECTIVE_PRE_MODEL_RESULTS_SINGLE_ITEM_CORRECTION",
+    "on_contradiction": "STOP_AND_RECLASSIFY_PROTOCOL_CHANGE"
+  },
+  "artifact_bindings": {
+    "parent_v4_1_spec": {
+      "path": "implementation/protocol/RESEARCH_SPEC_V4_1_KO.md",
+      "sha256": "7d0d27602aa3616d7f23601c6989d0462321ce85642d9714e27aa96c918e83c4",
+      "bytes": 14121,
+      "role": "IMMUTABLE_PARENT_V4_1_PROTOCOL"
+    },
+    "parent_v4_1_config": {
+      "path": "implementation/config/pilot_v4_1.json",
+      "sha256": "22dcb12ba2a1976810fb55722a6cfcc8bac43c54f916e133bb8433c0720eb2e5",
+      "bytes": 5284,
+      "role": "IMMUTABLE_PARENT_V4_1_CONFIG"
+    },
+    "parent_v4_1_amendment": {
+      "path": "implementation/protocol/AMENDMENT_V4_1.json",
+      "sha256": "b0fa7066f1dc401f6a3f72178e639cb809190563d78a328d5481ff8abc19f013",
+      "bytes": 4529,
+      "role": "IMMUTABLE_PARENT_V4_1_AMENDMENT"
+    },
+    "v4_1_1_config": {
+      "path": "implementation/config/pilot_v4_1_1.json",
+      "sha256": "e773b1842d38091d24fcf5a9359953bfce935b8e5938f4c0338acb141a8f3bf8",
+      "bytes": 7085,
+      "role": "V4_1_1_CONFIG_PENDING_IMPLEMENTATION"
+    },
+    "old_selection_plan": {
+      "path": "/home/i2slab4/jm/test_jm/work/annotations/pending_krdict-b100064abad6c836/ai_prereview_20260914T183937Z_3ff1529/advisory_bundle_ca44d79/selection_plan.json",
+      "sha256": "01556dfd37271c8687151f923f70a015057754f1fa1a1abe6d2b5c3c27957a27",
+      "bytes": 109878,
+      "role": "IMMUTABLE_PRE_CORRECTION_SELECTION_PLAN"
+    },
+    "old_review_feedback_intake": {
+      "path": "/home/i2slab4/jm/test_jm/work/annotations/pending_krdict-b100064abad6c836/ai_prereview_20260914T183937Z_3ff1529/review_feedback_intake_20260915T090554Z_jm02_ca44d79/review_feedback_intake.json",
+      "sha256": "741e0defa6053d1ca31bd80c49f902908bfb93781870c2ac133d9f344621f24d",
+      "bytes": 48701,
+      "role": "IMMUTABLE_PRE_CORRECTION_NON_PRODUCTION_INTAKE"
+    },
+    "old_review_feedback_intake_manifest": {
+      "path": "/home/i2slab4/jm/test_jm/work/annotations/pending_krdict-b100064abad6c836/ai_prereview_20260914T183937Z_3ff1529/review_feedback_intake_20260915T090554Z_jm02_ca44d79/review_feedback_intake_manifest.json",
+      "sha256": "ae7f7a8dbf6452888c333bbdaa8ada523fc6c120ac58731ee39c0b38f79044e0",
+      "bytes": 2595,
+      "role": "IMMUTABLE_PRE_CORRECTION_INTAKE_MANIFEST"
+    }
+  },
+  "correction": {
+    "correction_scope_count": 1,
+    "correction_scope_exactly_one": true,
+    "correction_id": "ordinal-38-en-hens-egg-to-egg",
+    "selection_ordinal": 38,
+    "review_order": 195,
+    "candidate_id": "krdict-b100064abad6c836:60487:1",
+    "candidate_sha256": "415d551f453ce555b266c350f08b80a240e065dfcf8d490a3756b85709f4fff6",
+    "language": "en",
+    "from": {
+      "registered_expression": "hen's egg",
+      "term_id": "krdict-b100064abad6c836:60487:1|en|1",
+      "term_sha256": "85b31706add8a2e3e5fea7e15b931a6a597734d3f1185d95c340becf09041179",
+      "source_option_id": "a452baf3132f121956428d056227a0ebb7c582a8aaab73757acb773c5df5d026",
+      "source_span_start": 0,
+      "source_span_end": 9,
+      "source_span_semantics": "ZERO_BASED_HALF_OPEN",
+      "source_text_exact": "hen's egg"
+    },
+    "to": {
+      "registered_expression": "egg",
+      "case_policy": "EXACT_LOWERCASE_COMMON_NOUN",
+      "lowercase_rationale_code": "ENGLISH_COMMON_NOUN_LEMMA_FORM",
+      "lowercase_rationale": "egg is registered in lowercase because it is an English common noun lemma, not a proper name or sentence-initial form.",
+      "same_source_option_required": true,
+      "source_option_id": "a452baf3132f121956428d056227a0ebb7c582a8aaab73757acb773c5df5d026",
+      "proposed_source_span_start": 6,
+      "proposed_source_span_end": 9,
+      "source_span_semantics": "ZERO_BASED_HALF_OPEN",
+      "proposed_source_text_exact": "egg",
+      "term_id": null,
+      "term_sha256": null,
+      "new_term_identity_status": "MUST_BE_MINTED_AND_BOUND_BY_IMPLEMENTATION_EVIDENCE"
+    },
+    "meaning_alignment_changed": false,
+    "other_language_expressions_changed": false,
+    "etymology_changed_or_required": false,
+    "silent_replacement_allowed": false
+  },
+  "evidence": {
+    "status": "PENDING",
+    "evidence_ref": null,
+    "evidence_ref_intentionally_not_invented": true,
+    "required_before_correction_activation": true,
+    "required_before_term_quality_blocker_resolution": true,
+    "required_before_training_eligibility": true,
+    "current_blocker_resolution_claimed": false
+  },
+  "integrity_and_activation": {
+    "additive_parent_protocol_preserved": true,
+    "parent_v4_1_files_modified": false,
+    "old_selection_and_intake_artifacts_preserved": true,
+    "old_artifact_overwrite_allowed": false,
+    "old_term_id_or_hash_reuse_allowed": false,
+    "silent_replacement_allowed": false,
+    "legacy_annotation_freeze_reinterpretation_allowed": false,
+    "legacy_experiment_freeze_reinterpretation_allowed": false,
+    "upstream_source_compatibility": "UPSTREAM_EXACT_HASH_ONLY",
+    "new_corrected_cohort_required": true,
+    "new_selection_artifact_required": true,
+    "new_annotation_freeze_required": true,
+    "new_experiment_freeze_required": true,
+    "new_surface_and_token_feature_artifact_required": true,
+    "affected_surface_and_token_pairs": [
+      ["ko", "en"],
+      ["en", "zh"],
+      ["en", "fr"]
+    ],
+    "all_six_pair_metrics_remain_required": true,
+    "correction_may_activate_only_after_exact_binding_validation": true,
+    "amendment_self_reference_present": false
+  },
+  "authorization_state": {
+    "pilot_authorized_only_after_all_v4_1_1_gates": true,
+    "training_eligible_now": false,
+    "pilot_run_authorized_now": false,
+    "main_enabled": false,
+    "main_authorized": false
+  },
+  "not_claimed": [
+    "REVIEWER_IDENTITY_AUTHENTICATED",
+    "FORMAL_CORRECTION_EVIDENCE_ATTACHED",
+    "CORRECTION_IMPLEMENTED",
+    "TERM_QUALITY_BLOCKER_RESOLVED",
+    "NEW_COHORT_CREATED",
+    "ANNOTATION_FREEZE_COMPLETE",
+    "EXPERIMENT_FREEZE_COMPLETE",
+    "GPU_REPLAY_PASS",
+    "PILOT_COMPLETE",
+    "MAIN_AUTHORIZED"
+  ]
+}

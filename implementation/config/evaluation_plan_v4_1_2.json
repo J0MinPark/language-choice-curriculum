@@ -1,0 +1,246 @@
+{
+  "version": "4.0.0-r1",
+  "frozen_before_model_results": true,
+  "normalization": "NFC_AND_WHITESPACE_ONLY",
+  "tokenizer": {
+    "type": "BYTE_LEVEL_BPE",
+    "vocab_size": 16384,
+    "min_frequency": 2,
+    "add_prefix_space": false,
+    "use_regex": true,
+    "special_tokens_in_id_order": [
+      "<|endoftext|>",
+      "<|pad|>"
+    ],
+    "document_separator": "<|endoftext|>",
+    "training_document_cap": 50000,
+    "training_utf8_byte_cap": 536870912,
+    "subset_order": "sha256(domain|wikidata_id|version_id|text_sha256), ascending",
+    "corpus_model_token_cap": 2000000,
+    "partial_final_document": "truncate only the materialized corpus token stream at the cap and record discarded tokens"
+  },
+  "model": {
+    "architecture": "GPT2LMHeadModel_RANDOM_INIT",
+    "layers": 10,
+    "hidden_size": 512,
+    "attention_heads": 8,
+    "ffn_size": 2048,
+    "context_length": 256,
+    "dropout": 0.0,
+    "attention_implementation": "eager",
+    "precision_candidate": "BF16_AUTOCAST_WITH_FP32_PARAMETERS_AND_ADAMW",
+    "precision_requires_gpu_replay_before_freeze": true
+  },
+  "training": {
+    "effective_batch_examples": 32,
+    "microbatch_examples": 32,
+    "gradient_accumulation_steps": 1,
+    "lexical_updates_per_stage": 3000,
+    "eval_interval_updates": 200,
+    "fixed_stage_endpoint": true,
+    "optimizer": "torch.optim.AdamW",
+    "learning_rate": 0.0003,
+    "history_learning_rate": 0.0001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.01,
+    "grad_clip_norm": 1.0,
+    "scheduler": "CONSTANT_EXPLICIT_STATE",
+    "parameter_decay_rule": "matrix weights decay; bias, normalization weights, and embeddings do not decay"
+  },
+  "prompt_plan": {
+    "format": "RD",
+    "training_wrappers": [
+      "train1",
+      "train2"
+    ],
+    "development_wrappers": [
+      "dev1",
+      "dev2"
+    ],
+    "test_wrappers": [
+      "test1",
+      "test2"
+    ],
+    "target_language_names": {
+      "ko": {
+        "ko": "한국어",
+        "en": "영어",
+        "zh": "중국어",
+        "fr": "프랑스어"
+      },
+      "en": {
+        "ko": "Korean",
+        "en": "English",
+        "zh": "Chinese",
+        "fr": "French"
+      },
+      "zh": {
+        "ko": "韩语",
+        "en": "英语",
+        "zh": "中文",
+        "fr": "法语"
+      },
+      "fr": {
+        "ko": "coréenne",
+        "en": "anglaise",
+        "zh": "chinoise",
+        "fr": "française"
+      }
+    },
+    "templates": {
+      "train1": {
+        "ko": {
+          "ANY": "뜻풀이: {gloss}\n이 개념을 나타내는 표현 하나만 쓰세요.\n답:",
+          "REQUESTED": "뜻풀이: {gloss}\n{target_language_name} 표현 하나만 쓰세요.\n답:"
+        },
+        "en": {
+          "ANY": "Definition: {gloss}\nWrite one expression for this concept.\nAnswer:",
+          "REQUESTED": "Definition: {gloss}\nWrite one {target_language_name} expression.\nAnswer:"
+        },
+        "zh": {
+          "ANY": "释义：{gloss}\n只写一个表示此概念的词语。\n答案：",
+          "REQUESTED": "释义：{gloss}\n只写一个{target_language_name}表达。\n答案："
+        },
+        "fr": {
+          "ANY": "Définition : {gloss}\nÉcrivez une seule expression pour ce concept.\nRéponse :",
+          "REQUESTED": "Définition : {gloss}\nÉcrivez une seule expression {target_language_name}.\nRéponse :"
+        }
+      },
+      "train2": {
+        "ko": {
+          "ANY": "정의: {gloss}\n어떤 표현인가요? 하나만 답하세요.\n응답:",
+          "REQUESTED": "정의: {gloss}\n{target_language_name}로 어떤 표현인가요? 하나만 답하세요.\n응답:"
+        },
+        "en": {
+          "ANY": "Meaning: {gloss}\nWhat is the expression? Give one only.\nResponse:",
+          "REQUESTED": "Meaning: {gloss}\nWhat is the expression in {target_language_name}? Give one only.\nResponse:"
+        },
+        "zh": {
+          "ANY": "定义：{gloss}\n这个概念用什么词表达？只回答一个。\n回答：",
+          "REQUESTED": "定义：{gloss}\n这个概念用{target_language_name}怎么表达？只回答一个。\n回答："
+        },
+        "fr": {
+          "ANY": "Sens : {gloss}\nQuelle est l’expression ? Donnez-en une seule.\nRéponse :",
+          "REQUESTED": "Sens : {gloss}\nQuelle est l’expression {target_language_name} ? Donnez-en une seule.\nRéponse :"
+        }
+      },
+      "dev1": {
+        "ko": {
+          "ANY": "뜻풀이: {gloss}\n표현:",
+          "REQUESTED": "뜻풀이: {gloss}\n{target_language_name} 표현:"
+        },
+        "en": {
+          "ANY": "Definition: {gloss}\nExpression:",
+          "REQUESTED": "Definition: {gloss}\n{target_language_name} expression:"
+        },
+        "zh": {
+          "ANY": "释义：{gloss}\n表达：",
+          "REQUESTED": "释义：{gloss}\n{target_language_name}表达："
+        },
+        "fr": {
+          "ANY": "Définition : {gloss}\nExpression :",
+          "REQUESTED": "Définition : {gloss}\nExpression {target_language_name} :"
+        }
+      },
+      "dev2": {
+        "ko": {
+          "ANY": "정의: {gloss}\n한 줄 답:",
+          "REQUESTED": "정의: {gloss}\n{target_language_name} 한 줄 답:"
+        },
+        "en": {
+          "ANY": "Meaning: {gloss}\nOne-line answer:",
+          "REQUESTED": "Meaning: {gloss}\nOne-line {target_language_name} answer:"
+        },
+        "zh": {
+          "ANY": "定义：{gloss}\n单行答案：",
+          "REQUESTED": "定义：{gloss}\n{target_language_name}单行答案："
+        },
+        "fr": {
+          "ANY": "Sens : {gloss}\nRéponse sur une ligne :",
+          "REQUESTED": "Sens : {gloss}\nRéponse {target_language_name} sur une ligne :"
+        }
+      },
+      "test1": {
+        "ko": {
+          "ANY": "개념 설명: {gloss}\n이름:",
+          "REQUESTED": "개념 설명: {gloss}\n{target_language_name} 이름:"
+        },
+        "en": {
+          "ANY": "Concept description: {gloss}\nName:",
+          "REQUESTED": "Concept description: {gloss}\n{target_language_name} name:"
+        },
+        "zh": {
+          "ANY": "概念说明：{gloss}\n名称：",
+          "REQUESTED": "概念说明：{gloss}\n{target_language_name}名称："
+        },
+        "fr": {
+          "ANY": "Description du concept : {gloss}\nNom :",
+          "REQUESTED": "Description du concept : {gloss}\nNom {target_language_name} :"
+        }
+      },
+      "test2": {
+        "ko": {
+          "ANY": "{gloss}\n정답 표현:",
+          "REQUESTED": "{gloss}\n{target_language_name} 정답 표현:"
+        },
+        "en": {
+          "ANY": "{gloss}\nTarget expression:",
+          "REQUESTED": "{gloss}\nTarget {target_language_name} expression:"
+        },
+        "zh": {
+          "ANY": "{gloss}\n目标表达：",
+          "REQUESTED": "{gloss}\n{target_language_name}目标表达："
+        },
+        "fr": {
+          "ANY": "{gloss}\nExpression cible :",
+          "REQUESTED": "{gloss}\nExpression cible {target_language_name} :"
+        }
+      }
+    }
+  },
+  "generation": {
+    "strategy": "MANUAL_GREEDY",
+    "maximum_new_tokens": 64,
+    "terminator": "NEWLINE",
+    "unterminated_output_class": "UNREGISTERED_UNTERMINATED",
+    "candidate_universe_at_all_stages": [
+      "ko",
+      "en",
+      "zh",
+      "fr"
+    ]
+  },
+  "readiness": {
+    "stage": "T3",
+    "input_language": "ko",
+    "format": "RD",
+    "split": "dev",
+    "wrappers": [
+      "dev1",
+      "dev2"
+    ],
+    "gate_each_wrapper_and_requested_language": true,
+    "cohort": "all_frozen_pilot_concepts",
+    "minimum_unrounded": 0.9
+  },
+  "measurement": {
+    "stage": "T3",
+    "input_language": "ko",
+    "format": "RD",
+    "mode": "ANY",
+    "split": "dev",
+    "wrappers": [
+      "dev1",
+      "dev2"
+    ],
+    "cohort": "frozen_four_string_identifiable_concepts",
+    "rho_min_unrounded": 0.6,
+    "mean_abs_wrapper_difference_max_unrounded": 0.15,
+    "low_z_threshold_strict_less_than": 0.05,
+    "low_z_fraction_block_at_or_above": 0.1
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "version": "4.0.0-r1",
+  "frozen_before_model_results": true,
+  "main_enabled": false,
+  "gpu": {
+    "required_physical_index": 2,
+    "required_cuda_visible_devices": "2",
+    "expected_uuid": "GPU-de18b86c-419a-795a-0667-c7ae03bf800f",
+    "allow_fallback": false,
+    "allow_multi_gpu": false
+  },
+  "budget": {
+    "campaign_gpu_hours_cap": 24.0,
+    "prior_gpu_hours_user_reported": 0.953,
+    "per_root_gpu_hours_cap": 6.0,
+    "api_requests_cap": 600,
+    "api_requests_already_attempted": 3,
+    "api_requests_remaining_before_collection": 597,
+    "automatic_download_bytes_cap": 6442450944,
+    "minimum_emergency_free_bytes": 5368709120
+  },
+  "collection_revision": {
+    "source_query_file": "templates/queries.txt",
+    "selection_rule": "retain the first floor(remaining_requests/3) non-comment queries in declared file order",
+    "selected_query_count": 199,
+    "languages_per_query": 3,
+    "planned_requests": 597,
+    "reason": "three credential-validation HTTP attempts preceded source collection; retain complete EN/ZH/FR request triplets within the campaign cap"
+  }
+}

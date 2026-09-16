@@ -1,0 +1,20 @@
+{
+  "version": "stratified-q-measurement-v2",
+  "status": "POST_RESULT_USER_REQUESTED_EXPLORATORY_AMENDMENT",
+  "factors": {
+    "header": ["뜻풀이", "정의"],
+    "answer_label": ["표현", "한 줄 답", "답", "응답"]
+  },
+  "design": "full_factorial_once_equal_weight",
+  "split_rule": "all_35_unordered_complementary_4_vs_4",
+  "gate_summary": "per_language_minimum_rho_and_maximum_mean_absolute_difference",
+  "median_Z_min": 0.9,
+  "low_Z_threshold": 0.05,
+  "low_Z_fraction_strict_max": 0.1,
+  "rho_min": 0.6,
+  "mean_absolute_difference_max": 0.15,
+  "undefined_rho_passes": false,
+  "historical_results_mutated": false,
+  "automatically_authorizes_H": false,
+  "main_enabled": false
+}

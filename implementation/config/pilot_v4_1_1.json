@@ -1,0 +1,203 @@
+{
+  "version": "4.1.1",
+  "implementation_revision": "4.1.1-r1",
+  "project_id": "lexical-freshstart-4lang-history-v4_1_1",
+  "parent_project_id": "lexical-freshstart-4lang-history-v4_1",
+  "design_status": "APPROVED_CORRECTION_PENDING_EVIDENCE_AND_IMPLEMENTATION",
+  "parent_config_binding": {
+    "path": "implementation/config/pilot_v4_1.json",
+    "sha256": "22dcb12ba2a1976810fb55722a6cfcc8bac43c54f916e133bb8433c0720eb2e5",
+    "bytes": 5284
+  },
+  "languages": ["ko", "en", "zh", "fr"],
+  "roots": [4101, 4102, 4103, 4104],
+  "policy": {
+    "pilot_authorized_after_gates": true,
+    "main_enabled": false,
+    "human_training_enabled": false,
+    "correction_policy_enabled": true,
+    "correction_activation_allowed_before_evidence": false,
+    "legacy_weights_allowed": false,
+    "old_project_search_allowed": false,
+    "model_results_observed_before_change": false,
+    "identity_authentication_claimed": false,
+    "legacy_freeze_reinterpretation_allowed": false,
+    "upstream_compatibility": "UPSTREAM_EXACT_HASH_ONLY"
+  },
+  "budget": {
+    "campaign_gpu_hours_cap": 24.0,
+    "prior_gpu_hours_user_reported": 0.953,
+    "per_root_gpu_hours_cap": 6.0,
+    "api_requests_cap": 600,
+    "automatic_download_gib_cap": 6.0
+  },
+  "data": {
+    "min_total": 60,
+    "min_primary_approved": 60,
+    "min_identifiable": 40,
+    "requested_pilot_cohort_size": 60,
+    "source": "KRDICT",
+    "raw_snapshot_manifest": null,
+    "require_meaning_alignment_for_every_selected_concept": true,
+    "require_term_quality_for_every_selected_expression": true,
+    "require_source_bound_selections": true,
+    "required_registered_languages": ["ko", "en", "zh", "fr"],
+    "etymology_required": false,
+    "current_term_quality_blockers": [
+      {
+        "selection_ordinal": 38,
+        "review_order": 195,
+        "candidate_id": "krdict-b100064abad6c836:60487:1",
+        "language": "en",
+        "registered_expression": "hen's egg",
+        "status": "BLOCKED_TERM_QUALITY_UNTIL_CORRECTION_EVIDENCE"
+      }
+    ],
+    "approved_pending_registered_expression_corrections": [
+      {
+        "correction_id": "ordinal-38-en-hens-egg-to-egg",
+        "selection_ordinal": 38,
+        "review_order": 195,
+        "candidate_id": "krdict-b100064abad6c836:60487:1",
+        "candidate_sha256": "415d551f453ce555b266c350f08b80a240e065dfcf8d490a3756b85709f4fff6",
+        "language": "en",
+        "from_registered_expression": "hen's egg",
+        "to_registered_expression": "egg",
+        "to_case_policy": "EXACT_LOWERCASE_COMMON_NOUN",
+        "activation_status": "PENDING_EVIDENCE_AND_IMPLEMENTATION",
+        "evidence_ref": null
+      }
+    ]
+  },
+  "registered_expression_correction_control": {
+    "correction_scope_count": 1,
+    "correction_scope_exactly_one": true,
+    "silent_replacement_allowed": false,
+    "old_artifacts_preserved": true,
+    "old_term_identity_reuse_allowed": false,
+    "new_term_id_required": true,
+    "new_term_sha256_required": true,
+    "formal_evidence_required": true,
+    "formal_evidence_status": "PENDING",
+    "formal_evidence_ref": null,
+    "new_cohort_required": true,
+    "new_annotation_freeze_required": true,
+    "new_experiment_freeze_required": true,
+    "old_cohort_or_freeze_reinterpretation_allowed": false,
+    "recompute_surface_and_token_features": true,
+    "affected_language_pairs": [
+      ["ko", "en"],
+      ["en", "zh"],
+      ["en", "fr"]
+    ],
+    "training_eligible_before_all_gates": false
+  },
+  "surface_features": {
+    "required_for_core": true,
+    "freeze_before_model_results": true,
+    "language_pairs": [
+      ["ko", "en"],
+      ["ko", "zh"],
+      ["ko", "fr"],
+      ["en", "zh"],
+      ["en", "fr"],
+      ["zh", "fr"]
+    ],
+    "normalization": "NFC_AND_WHITESPACE_ONLY",
+    "character_metric": "ONE_MINUS_LEVENSHTEIN_OVER_MAX_UNICODE_CODEPOINT_LENGTH",
+    "include_character_length_per_language": true,
+    "token_metric": "EXPRESSION_ONLY_TOKEN_ID_SET_JACCARD",
+    "include_token_length_per_language": true,
+    "tokenizer": "ACTUAL_KO_ONLY_FROZEN_TOKENIZER",
+    "excluded_tokens": ["PROMPT", "INSTRUCTION", "PADDING", "SPECIAL", "ANSWER_TERMINATOR_NEWLINE"],
+    "historical_relation_claimed": false
+  },
+  "leakage_control": {
+    "component_field": "leakage_component_id",
+    "etymology_family_required": false,
+    "required_for_current_s_h_pilot": false,
+    "required_before_any_predictor_fit": true,
+    "component_edges": [
+      "SAME_KRDICT_TARGET_OR_HEADWORD_FAMILY",
+      "SHARED_CANONICAL_REGISTERED_EXPRESSION_ACROSS_CONCEPTS",
+      "REVIEWED_SYNONYM_OR_SEMANTIC_DUPLICATE",
+      "SAME_HISTORY_COUNTERBALANCE_PAIR"
+    ],
+    "incomplete_predictor_action": "BLOCKED_PREDICTOR_SPLIT"
+  },
+  "model": {
+    "architecture": "GPT2Config -> GPT2LMHeadModel (random initialization)",
+    "layers": 10,
+    "hidden_size": 512,
+    "attention_heads": 8,
+    "ffn_size": 2048,
+    "context_length": 256,
+    "vocab_size": 16384,
+    "dropout": 0.0,
+    "tokenizer_train_language": "ko",
+    "tokenizer_type": "byte_level_BPE_frozen"
+  },
+  "preparation": {
+    "korean_corpus_model_tokens_cap": 2000000,
+    "lexical_updates_per_stage": 3000,
+    "eval_interval_updates": 200,
+    "use_fixed_stage_endpoint": true,
+    "effective_batch_examples": 32,
+    "optimizer": "AdamW",
+    "lr": 0.0003,
+    "betas": [0.9, 0.999],
+    "eps": 1e-8,
+    "weight_decay": 0.01,
+    "grad_clip_norm": 1.0,
+    "h_lr": 0.0001,
+    "history_family": "B36",
+    "history_rounds_per_concept": 160
+  },
+  "measurement": {
+    "readiness_min": 0.9,
+    "rho_min": 0.6,
+    "wrapper_abs_max": 0.15,
+    "z_threshold": 0.05,
+    "low_z_fraction_max": 0.1,
+    "primary_input_language": "ko",
+    "primary_format": "RD",
+    "dev_wrappers": ["dev1", "dev2"],
+    "primary_estimands": ["h_four_language_vector", "r_en_fr_contrast"],
+    "primary_covariates": [
+      "t3_initial_q_p_z_a",
+      "target_frequency",
+      "last_exposure",
+      "prespecified_decay_summaries",
+      "input_context",
+      "character_lengths",
+      "token_lengths",
+      "six_pair_character_similarity",
+      "six_pair_token_similarity"
+    ]
+  },
+  "prediction": {
+    "enabled_for_current_pilot": false,
+    "status_when_disabled": "NOT_RUN_PREDICTION_BY_DESIGN",
+    "heldout_unit": "leakage_component_id",
+    "heldout_concepts_are_lm_unseen": false,
+    "outcome_features_forbidden": ["final_q", "final_loss", "test_result"],
+    "requires_new_preregistration": true
+  },
+  "exploratory": {
+    "documented_lexical_relation": {
+      "enabled_for_current_pilot": false,
+      "required_for_core_gates": false,
+      "status_when_disabled": "NOT_RUN_EXPLORATORY_LEXICAL_RELATION_BY_DESIGN",
+      "status_when_missing_or_incomplete": "NOT_RUN_EXPLORATORY_LEXICAL_RELATION",
+      "unresolved_as_distinct_forbidden": true,
+      "requires_preoutcome_freeze_and_new_preregistration": true
+    }
+  },
+  "proposed_main_criteria_NOT_AUTHORIZED": {
+    "absolute_mae_gain": 0.01,
+    "relative_mae_gain": 0.1,
+    "equivalence_margin": 0.02,
+    "maximum_roots": 16,
+    "requires_new_preregistration": true
+  }
+}

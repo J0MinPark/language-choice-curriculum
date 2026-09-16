@@ -1,0 +1,212 @@
+[
+  {
+    "path": "work/runs/paired_reverse_4101_v1/checkpoints/4101_T3_003000_e95fe75f4a4d/state.pt",
+    "bytes": 480712537,
+    "recorded_state_sha256": "f17cb7cfbd7d4d89b36cd98e3fbd0f777341be9e71c1fc41efca2ab03a701688",
+    "availability": "Retained on experiment server; not in Git repository"
+  },
+  {
+    "path": "work/runs/paired_reverse_4101_v1/checkpoints/4101_T1_003000_ea0154079cbc/state.pt",
+    "bytes": 480712537,
+    "recorded_state_sha256": "65668696c252f3c92251f83682b4d052b6de2f6c0211c83defc8c3d587b8914c",
+    "availability": "Retained on experiment server; not in Git repository"
+  },
+  {
+    "path": "work/runs/paired_reverse_4101_v1/checkpoints/4101_T0_import_79758436458a/state.pt",
+    "bytes": 480707929,
+    "recorded_state_sha256": "4a0c6a2af64913b112d98c33fcd8c31481896d05df21f662898736d771dfa3e9",
+    "availability": "Retained on experiment server; not in Git repository"
+  },
+  {
+    "path": "work/runs/paired_reverse_4101_v1/checkpoints/4101_T2_003000_3ed3628c1574/state.pt",
+    "bytes": 480712537,
+    "recorded_state_sha256": "96b399f5e85a054d694ccae631ba973db765c9f1ebe5bb7f9d46cfd8e010be80",
+    "availability": "Retained on experiment server; not in Git repository"
+  },
+  {
+    "path": "work/runs/accuracy_selected_9e209c3/checkpoints/lower_lr_4080/state.pt",
+    "bytes": 480715417,
+    "recorded_state_sha256": "5d90dca1c804e1855d7a8989a39de1d654818b0cae63065a9184e8736053cbfa",
+    "availability": "Retained on experiment server; not in Git repository"
+  },
+  {
+    "path": "work/runs/pilot_jm02_4e30ec2/checkpoints/4101_T2_003000_bb98c7fb6ad8/state.pt",
+    "bytes": 480712537,
+    "recorded_state_sha256": "a5ff10e8da070cee39e619acd24e71cad4a6c04aa5a57becd5e23c1795b4afb3",
+    "availability": "Retained on experiment server; not in Git repository"
+  },
+  {
+    "path": "work/runs/pilot_jm02_4e30ec2/checkpoints/4101_T1_003000_c81a25e0031f/state.pt",
+    "bytes": 480712537,
+    "recorded_state_sha256": "90f82104d268a3a52178bcc70acf981a453fe9294cf58dbb78bb3db4f80e7285",
+    "availability": "Retained on experiment server; not in Git repository"
+  },
+  {
+    "path": "work/runs/pilot_jm02_4e30ec2/checkpoints/4101_CORPUS_000245_e14813897192/state.pt",
+    "bytes": 480712601,
+    "recorded_state_sha256": "2714594c0add1f9ff7bb01b106759529a4cbde5c260b5c3c6b82042d2dd7e541",
+    "availability": "Retained on experiment server; not in Git repository"
+  },
+  {
+    "path": "work/runs/pilot_jm02_4e30ec2/checkpoints/4101_T0_003000_28f4069ccae8/state.pt",
+    "bytes": 480712665,
+    "recorded_state_sha256": "2b68d278f49a6811c72ad0f9664d11c00986cfb0db10e84b526c72977bb36e3b",
+    "availability": "Retained on experiment server; not in Git repository"
+  },
+  {
+    "path": "work/runs/pilot_jm02_4e30ec2/checkpoints/4101_INIT_000000_5a5ea59e8a8e/state.pt",
+    "bytes": 160252161,
+    "recorded_state_sha256": "5080d1b85d9b5e8f69bf4b6bafeb1e04c89aec45245e1f21d1a877abb623c279",
+    "availability": "Retained on experiment server; not in Git repository"
+  },
+  {
+    "path": "work/runs/pilot_jm02_4e30ec2/checkpoints/4101_T3_003000_f1e50a92f0bc/state.pt",
+    "bytes": 480712537,
+    "recorded_state_sha256": "67d401ee71fd42775b43c90ce78a432592bb47ada596807531fa9b09906a8ac8",
+    "availability": "Retained on experiment server; not in Git repository"
+  },
+  {
+    "path": "work/runs/accuracy_probe_47dc5c6/checkpoints/prompt_mix_3360/state.pt",
+    "bytes": 480713625,
+    "recorded_state_sha256": "51dfa61285840e4b2551ea6f211bf4a594a0ddb860b473c35dfc0d0dc1ef00bc",
+    "availability": "Retained on experiment server; not in Git repository"
+  },
+  {
+    "path": "work/runs/pilot_jm02_882fdd0/checkpoints/4101_INIT_000000_0964a5794cab/state.pt",
+    "bytes": 160252161,
+    "recorded_state_sha256": "098cae13060d6400120a2e8f99cf19805997cd659a9b93f48cc01f0ab5b2070f",
+    "availability": "Retained on experiment server; not in Git repository"
+  },
+  {
+    "path": "work/runs/accuracy_refinement_fdfa878/checkpoints/lower_lr_3720/state.pt",
+    "bytes": 480714521,
+    "recorded_state_sha256": "c19ae399c555267703a796593dfda16bea3391a65bb1d86c41226ec89831a360",
+    "availability": "Retained on experiment server; not in Git repository"
+  },
+  {
+    "path": "work/runs/trajectory_replication_v1/checkpoints/4102_T1_003000_cbdd66f98bb1/state.pt",
+    "bytes": 480712537,
+    "recorded_state_sha256": "f0cb125c6874787a2549a21547a6f03267c7fe6e94f35af38c2ac364a55472c3",
+    "availability": "Retained on experiment server; not in Git repository"
+  },
+  {
+    "path": "work/runs/trajectory_replication_v1/checkpoints/4102_INIT_000000_6d7fa912a7d4/state.pt",
+    "bytes": 160252161,
+    "recorded_state_sha256": "a69c52e6a22293f842b4f5ca969580cba7694018e67717133575fd445b487ef4",
+    "availability": "Retained on experiment server; not in Git repository"
+  },
+  {
+    "path": "work/runs/trajectory_replication_v1/checkpoints/4102_T2_003000_0927c1d3cc68/state.pt",
+    "bytes": 480712537,
+    "recorded_state_sha256": "1920098ed30347b067cd8a7f8fd90844342674f6f748426b3ddb59ee4fb3d87d",
+    "availability": "Retained on experiment server; not in Git repository"
+  },
+  {
+    "path": "work/runs/trajectory_replication_v1/checkpoints/4104_T3_003000_c0e04028d976/state.pt",
+    "bytes": 480712601,
+    "recorded_state_sha256": "e493564918caf3e8cd0e5886a1dd244c120f09e82cc76efcbc6f8d6c16b8915e",
+    "availability": "Retained on experiment server; not in Git repository"
+  },
+  {
+    "path": "work/runs/trajectory_replication_v1/checkpoints/4103_T0_003000_a636b0de33a7/state.pt",
+    "bytes": 480712537,
+    "recorded_state_sha256": "30b95b14bc0fa6275d8211a8b7c7558971dff8c33455530c79d8a3f842c44c8c",
+    "availability": "Retained on experiment server; not in Git repository"
+  },
+  {
+    "path": "work/runs/trajectory_replication_v1/checkpoints/4104_T0_003000_f9a5bddb612a/state.pt",
+    "bytes": 480712601,
+    "recorded_state_sha256": "aebaae61cfe043605f2ab2852a6d7763bbb752dd7f0c19f762dbb1d4b5c858c3",
+    "availability": "Retained on experiment server; not in Git repository"
+  },
+  {
+    "path": "work/runs/trajectory_replication_v1/checkpoints/4102_T3_003000_e251607f08bf/state.pt",
+    "bytes": 480712537,
+    "recorded_state_sha256": "44dcac70400083a1f7efd3c755745ad4b89f7f4d4fe91364a450b25895199c25",
+    "availability": "Retained on experiment server; not in Git repository"
+  },
+  {
+    "path": "work/runs/trajectory_replication_v1/checkpoints/4103_INIT_000000_99885be377f2/state.pt",
+    "bytes": 160252161,
+    "recorded_state_sha256": "5fde7d93abea544f56c1879fa7005ea9261a6033f33f4cc6b3249e720ee296a5",
+    "availability": "Retained on experiment server; not in Git repository"
+  },
+  {
+    "path": "work/runs/trajectory_replication_v1/checkpoints/4102_CORPUS_000245_1dc81d317b0a/state.pt",
+    "bytes": 480712537,
+    "recorded_state_sha256": "f1c4fc4e3b6badcb75ae6a88d2a18b2d2223a15c3c66b75722a5f016d696fb30",
+    "availability": "Retained on experiment server; not in Git repository"
+  },
+  {
+    "path": "work/runs/trajectory_replication_v1/checkpoints/4103_T3_003000_a88f9f7eabd7/state.pt",
+    "bytes": 480712537,
+    "recorded_state_sha256": "aa20ba66f30e8bec25e2953fbc33176c710151c9ca0621b0bf930b86186cd29e",
+    "availability": "Retained on experiment server; not in Git repository"
+  },
+  {
+    "path": "work/runs/trajectory_replication_v1/checkpoints/4104_T1_003000_3368bb8ecc0d/state.pt",
+    "bytes": 480712601,
+    "recorded_state_sha256": "a5f3986ffc88158db71d2ae397d5078721b789b1dfd67db22daec9546d16cc89",
+    "availability": "Retained on experiment server; not in Git repository"
+  },
+  {
+    "path": "work/runs/trajectory_replication_v1/checkpoints/4103_T2_003000_c30b941ed467/state.pt",
+    "bytes": 480712537,
+    "recorded_state_sha256": "c70a6df78f2d45589f92e7187ca53d96ea98ef7d5ac0e5164098f22c7420f495",
+    "availability": "Retained on experiment server; not in Git repository"
+  },
+  {
+    "path": "work/runs/trajectory_replication_v1/checkpoints/4102_T0_003000_574397860a8b/state.pt",
+    "bytes": 480712537,
+    "recorded_state_sha256": "d7e5455101b8624597822058c481289aab833d67c6723e7afd869987232a3178",
+    "availability": "Retained on experiment server; not in Git repository"
+  },
+  {
+    "path": "work/runs/trajectory_replication_v1/checkpoints/4104_INIT_000000_3e3e160f37fc/state.pt",
+    "bytes": 160252225,
+    "recorded_state_sha256": "b47ad6296930da5aad373fc3641c6ea72bc03e9e948762500be9809b16ee124f",
+    "availability": "Retained on experiment server; not in Git repository"
+  },
+  {
+    "path": "work/runs/trajectory_replication_v1/checkpoints/4104_CORPUS_000245_bc37397b5643/state.pt",
+    "bytes": 480712601,
+    "recorded_state_sha256": "04d54edbffc3c2087fb30063426ee5a804ce828bda6fc85fd96d4fc643658994",
+    "availability": "Retained on experiment server; not in Git repository"
+  },
+  {
+    "path": "work/runs/trajectory_replication_v1/checkpoints/4103_T1_003000_a18175f9c7c1/state.pt",
+    "bytes": 480712537,
+    "recorded_state_sha256": "0311847804591978b96658aba44f19782a3d96c23a126e48b43cc47a36153e4d",
+    "availability": "Retained on experiment server; not in Git repository"
+  },
+  {
+    "path": "work/runs/trajectory_replication_v1/checkpoints/4103_CORPUS_000245_151152f95eca/state.pt",
+    "bytes": 480712537,
+    "recorded_state_sha256": "0458b3de8cb8a839f367ffa79070aebabcbbef764a1f6121fa0931af34780942",
+    "availability": "Retained on experiment server; not in Git repository"
+  },
+  {
+    "path": "work/runs/trajectory_replication_v1/checkpoints/4104_T2_003000_44aabca7f688/state.pt",
+    "bytes": 480712729,
+    "recorded_state_sha256": "01515245a22d30aac14b632396892c2e62def984f07fe8006aff5776a5a1f511",
+    "availability": "Retained on experiment server; not in Git repository"
+  },
+  {
+    "path": "work/checkpoints/gpu2_replay_trajectory_kernel139_v1/state.pt",
+    "bytes": 480713753,
+    "recorded_state_sha256": "721bf6a89d68d38573cd486a53980f1eceaa3276413310b140e77d66845c3f4e",
+    "availability": "Retained on experiment server; not in Git repository"
+  },
+  {
+    "path": "work/checkpoints/gpu2_replay_trajectory_replication_v1/state.pt",
+    "bytes": 480713753,
+    "recorded_state_sha256": "5365d3ba661c5bad41d70123f932d4002c423f9dd41be896910a81dd0ca3260f",
+    "availability": "Retained on experiment server; not in Git repository"
+  },
+  {
+    "path": "work/checkpoints/gpu2_replay_paired_reverse_4101_v1/state.pt",
+    "bytes": 480713753,
+    "recorded_state_sha256": "ba1d3b28f36a7787e75cdf826e38c00e0cf853a6d32052f0c7e4ac863ee244d6",
+    "availability": "Retained on experiment server; not in Git repository"
+  }
+]

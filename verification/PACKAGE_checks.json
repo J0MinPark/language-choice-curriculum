@@ -1,0 +1,12 @@
+{
+  "intact_package_pass": true,
+  "tampered_config_rejected": true,
+  "tamper_exit_code": 20,
+  "tampered_check_result": {
+    "status": "BLOCKED_SPEC_VERSION",
+    "checked_files": 34,
+    "errors": [
+      "spec/pilot.json:HASH_MISMATCH"
+    ]
+  }
+}

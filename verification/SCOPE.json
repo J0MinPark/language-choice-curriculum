@@ -1,0 +1,21 @@
+{
+  "version": "4.0.0",
+  "date_utc": "2026-09-14T14:11:46.872585+00:00",
+  "python": "3.13.5",
+  "torch": "2.10.0+cpu",
+  "cuda_available": false,
+  "cpu_unit_tests": {
+    "run": 65,
+    "failures": 0,
+    "skipped": 0,
+    "log": "unit_tests.log"
+  },
+  "cpu_checkpoint_scope": "Small Linear model + AdamW/Python/NumPy/Torch RNG in-memory replay. Not final Transformer or data-loader/GPU integration.",
+  "real_krdict_api_payload": "NOT_RUN_NO_CREDENTIALS",
+  "real_four_language_data_QA": "NOT_RUN",
+  "real_etymology_QA": "NOT_RUN",
+  "full_LM_trainer": "IMPLEMENTATION_TASK_NOT_INCLUDED",
+  "GPU_training": "NOT_RUN",
+  "pdf": "5 pages; all rendered pages visually checked",
+  "document_sources": "Official/public source pages checked through web; file network probe recorded separately."
+}

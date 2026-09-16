@@ -1,0 +1,21 @@
+{
+  "data_kind": "SYNTHETIC_FIXTURES_OR_NO_DATA",
+  "checks": [
+    {
+      "test": "synthetic CLI measure and JSON/markdown identical",
+      "passed": true,
+      "status": "PASS"
+    },
+    {
+      "test": "changed metric cannot overwrite existing result JSON",
+      "passed": true,
+      "exit_code": 20
+    },
+    {
+      "test": "no-key preflight requires user action, no HTTP/GPU",
+      "passed": true,
+      "exit_code": 10,
+      "status": "BLOCKED_CREDENTIALS"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+.venv/
+.env
+.env.*
+__pycache__/
+*.py[cod]
+work/
+implementation/data/
+implementation/checkpoints/
+implementation/.env*
+*.pt
+*.safetensors

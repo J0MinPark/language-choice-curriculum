@@ -1,0 +1,44 @@
+{
+  "schema_version": "trusted-artifact-anchors-v1",
+  "registry_revision": "1",
+  "implementation_revision": "4.0.0-r1",
+  "trust_model": {
+    "authority": "REVIEWED_GIT_COMMIT_AND_VERIFIED_IMPLEMENTATION_INTEGRITY_MANIFEST",
+    "human_signature_claimed": false,
+    "keyed_signature_claimed": false,
+    "unkeyed_hash_role": "INTEGRITY_BINDING_ONLY_NOT_AUTHENTICATION"
+  },
+  "anchors": [
+    {
+      "artifact_kind": "EXPERIMENT_FREEZE",
+      "artifact_id": "semantic-experiment-2e91e64b9599f8507292",
+      "manifest_sha256": "c3c98b8ac8dcb727ca8e3551dfdbae6e827bcac690514aed0e17466d6dd03b1a",
+      "bindings": {
+        "schema_version": "semantic-experiment-freeze-v4.1.2",
+        "protocol_version": "4.1.2",
+        "annotation_freeze_id": "8954cf33111aa2ee4d54edcaad14df592832313ecfcbe3dadee286e62773288d",
+        "cohort_sha256": "1d21c070358cc989344363056b7b7457bbdfed6de90e5de12fba4e15c6b96312",
+        "tokenizer_file_sha256": "76c0f7ced11354c3fc9e4a1e31f3e2e2823f80f6bd251187f7993405f51c4409",
+        "corpus_token_count": 2000000,
+        "boundary_audit_sha256": "9c705fbf55d91a470ad049dbe9c5b0012443b9b4f7f8654872952cba51c66678",
+        "allowed_execution_phases": ["GPU_REPLAY"],
+        "scientific_training_authorized": false
+      }
+    },
+    {
+      "artifact_kind": "KRDICT_SOURCE_COLLECTION",
+      "artifact_id": "krdict-b100064abad6c836",
+      "manifest_sha256": "65e899adebb855fc330db6765d9531f24df7d36769d7cf9e5c2acb4f430dcbc5",
+      "bindings": {
+        "implementation_revision": "4.0.0-r1",
+        "collection_method": "OFFLINE_IMPORT_EXISTING_IMMUTABLE_RAW",
+        "data_kind": "REAL_KRDICT_API",
+        "endpoint": "https://krdict.korean.go.kr/api/search",
+        "plan_sha256": "2b00f62e1f0d594a3e075cbd765ef014c33259bc932f42420094eff290b00620",
+        "query_source_sha256": "745b8f8af0b5bd71862f030888c9b93c32a02388d70b37f609e463f8e769ddd1",
+        "requests_planned": 597,
+        "source_set_sha256": "b100064abad6c8368bdc7f137b8ec887eff4e90482be47026995ab9c33e0bf69"
+      }
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "pages": 5,
+  "link_count": 10,
+  "renderer": "pdfium via render_pdf.py at 150dpi",
+  "visual_review": "all 5 rendered pages checked",
+  "missing_replacement_character": false
+}

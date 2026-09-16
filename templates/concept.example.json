@@ -1,0 +1,27 @@
+{
+  "synthetic_fixture": true,
+  "concept_id": "EXAMPLE_ONLY",
+  "snapshot_id": "PENDING_REAL_SNAPSHOT",
+  "source_urls": [],
+  "source_record_hashes": [],
+  "answers": {
+    "ko": "<한국어등록표현>",
+    "en": "<영어등록표현>",
+    "zh": "<중국어등록표현>",
+    "fr": "<프랑스어등록표현>"
+  },
+  "glosses": {
+    "ko": "<실제원문뜻풀이>",
+    "en": "<실제원문뜻풀이>",
+    "zh": "<실제원문뜻풀이>",
+    "fr": "<실제원문뜻풀이>"
+  },
+  "qa": {
+    "status": "PENDING",
+    "reviewer": null,
+    "review_date": null,
+    "source_alignment_checked": false,
+    "answer_copy_checked": false
+  },
+  "cluster_id": "PENDING_CLUSTER"
+}

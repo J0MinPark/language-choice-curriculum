@@ -1,0 +1,6 @@
+{
+  "url": "https://krdict.korean.go.kr/eng/openApi/openApiInfo",
+  "status": "FAILED",
+  "error_type": "URLError",
+  "detail": "<urlopen error [Errno -3] Temporary failure in name resolution>"
+}

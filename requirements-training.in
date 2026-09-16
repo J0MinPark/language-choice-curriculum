@@ -1,0 +1,11 @@
+# Claude resolves compatible versions on the actual GPU host, then records a lock file.
+# Do NOT replace a working server-wide Torch/CUDA environment. Use a project venv.
+torch
+transformers
+tokenizers
+numpy
+scipy
+scikit-learn
+statsmodels
+# Corpus extraction: tensorflow-datasets + a compatible CPU TensorFlow in a SEPARATE
+# data-only environment if needed. Never install GPU TensorFlow into the trainer venv.
